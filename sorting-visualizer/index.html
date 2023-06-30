@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sorting - Visualizer !</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row" style="margin-top:100px ; margin-bottom:100px;">
+      <div id="bars-container">
+      </div>
+      <div>
+        <div class="card text-center">
+          <div class="card-header">
+            <button class="btn btn-primary mb-1 mt-1" onclick="startSorting()">Bubble Sort</button>
+            <button class="btn btn-primary mb-1 mt-1" onclick="SelectionSort()">Selection Sort</button>
+            <button class="btn btn-primary mb-1 mt-1" onclick="InsertionSort()">Insertion Sort</button>
+            <button class="btn btn-primary mb-1 mt-1" onclick="MergeSort()">Merge Sort</button>
+            <button class="btn btn-primary mb-1 mt-1" onclick="QuickSort()">Quick Sort</button>
+            <button class="btn btn-primary mb-1 mt-1" onclick="HeapSort()">Heap Sort</button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Bubble Sort</h5>
+            <div class="card-text">
+              <div class="card-action"></div>
+              <div class="card-change"></div>
+            </div>
+
+            <div class="make-btn"></div>
+
+          </div>
+          <div class="card-footer text-muted">
+            Shows Time Complexity
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./visualizer/visualiser.js"></script>
+  <script src="./algorithms/bubbleSort.js"></script>
+  <script src="./visualizer/common.js"></script>
+  <script src="./algorithms/selectionSort.js"></script>
+  <script src="./algorithms/insertionSort.js"></script>
+  <script src="./algorithms/mergeSort.js"></script>
+  <script src="./algorithms/quickSort.js"></script>
+  <script src="./algorithms/heapSort.js"></script>
+</body>
+
+</html>
